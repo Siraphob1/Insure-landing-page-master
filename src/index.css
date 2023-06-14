@@ -9,9 +9,15 @@
   .nav-link-header{
     @apply  uppercase font-fontKarla font-bold text-[#837d87] 
             lg:px-[1rem] lg:py-[0.5rem] lg:tracking-[0.1rem]
+            hover:text-[#2d2640]
+  }
+  .nav-link-select-header{
+    @apply  border-2 border-black px-[1.5rem] text-black mx-[1rem]
+            hover:bg-[#2d2640] hover:text-white
   }
   .btn{
-    @apply  font-fontKarla text-[#fafafa] uppercase px-[2rem] py-[0.5rem] border-2 border-white
+    @apply  font-fontKarla font-bold text-[#fafafa] uppercase px-[2rem] py-[0.5rem] border-2 border-white
+            hover:bg-white hover:text-black
   }
   .h1-section1{
     @apply  font-fontDM text-[2.7rem] text-[#2b272f] text-center
@@ -28,12 +34,33 @@
     @apply  font-fontKarla  text-[#837d87] px-[0.1rem]
             xl:pr-[3rem] xl:pl-0
   }
+  .li-footer{
+    @apply  px-[0.5rem] pt-[2rem] 
+            xl:py-[0.5rem]
+            hover:brightness-0
+  }
+  .title-footer{
+    @apply uppercase font-fontKarla font-bold text-[#95a9c6]  mt-[3rem] mb-[2rem]
+  }
+  .nav-link-footer{
+    @apply  hover:border-b hover:border-[#2b272f]
+  }
+  .nav-li-footer{
+    @apply  uppercase font-fontKarla font-bold text-[#2b272f] my-[0.5rem] 
+            xl:my-[1rem]
+  }
+  .nav-menu{
+    @apply  uppercase font-fontKarla text-white text-[2rem] text-center  my-[0.5rem]  py-[1rem] w-[90%] block
+            hover:border-2 hover:border-white
+            
+  }
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -66,6 +93,8 @@
   width: 50%;
   border: 0.5px solid var(--c-Grayish-Blue);
 }
+
+
 
 @media only screen and (min-width: 1280px) {
 
