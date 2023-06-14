@@ -8,14 +8,14 @@ import intro_left_mobile from "../images/bg-pattern-intro-left-mobile.svg";
 const HeaderComponent = () => {
     
   return (
-    <header className="      ">
-        <section className="hidden xl:block xl:relative xl:pb-[20rem]">
-            <div className="bg-[#2d2640] w-full xl:px-[10rem] xl:pt-[6.5rem] xl:pb-[11rem] xl:relative xl:overflow-hidden">
+    <header className="">
+        <section className="hidden xl:block  relative pb-[20rem]">
+            <div className="bg-[#2d2640] w-full px-[10rem] pt-[6.5rem] pb-[11rem] relative overflow-hidden">
                 <div className=" w-[48%]">
-                    <h1 className=" font-fontDM text-[#fafafa] text-[4rem] xl:leading-[3.5rem] xl:pt-[3rem] xl:pr-[4rem]">
-                        <span className=" xl:border-t xl:border-white xl:pt-[2.4rem] ">Hum</span>anizing your insurance.
+                    <h1 className=" font-fontDM text-[#fafafa] text-[4rem] leading-[3.5rem] pt-[3rem] pr-[4rem]">
+                        <span className=" border-t border-white pt-[2.4rem] ">Hum</span>anizing your insurance.
                     </h1>
-                    <p className=" text-[#95a9c6] xl:py-[2rem] lg:pr-[2rem] xl:pr-[1rem]">Get your life insurance coverage easier and faster. We blend our expertise 
+                    <p className=" text-[#95a9c6] py-[2rem] lg:pr-[2rem] pr-[1rem]">Get your life insurance coverage easier and faster. We blend our expertise 
                     and technology to help you find the plan that’s right for you. Ensure you 
                     and your loved ones are protected.
                     </p>
@@ -41,9 +41,6 @@ const HeaderComponent = () => {
             </div>
             <img src={intro_right_mobile} alt="intro_right_mobile" className=" absolute z-[1]  bottom-0 right-0"/>
         </section>
-
-
-      
     </header>
   )
 }
