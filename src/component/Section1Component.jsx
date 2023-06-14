@@ -6,7 +6,9 @@ import ipeople from "../images/icon-people-first.svg";
 const Section1Component = () => {
   return (
     <section>
-        <h1 className=" h1-section1">We’re different</h1>
+        <div className="flex justify-center xl:justify-start">
+            <span className=" h1-section1">We’re different</span>
+        </div>
         <div className="flex flex-col text-center xl:flex-row xl:text-start ">
             <section className="card-section1">
                 <img src={isnappy} alt="isnappy" />
