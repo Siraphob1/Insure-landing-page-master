@@ -4,9 +4,13 @@ import intro_right_desktop from "../images/bg-pattern-intro-right-desktop.svg";
 import intro_right_mobile from "../images/bg-pattern-intro-right-mobile.svg";
 import intro_left_desktop from "../images/bg-pattern-intro-left-desktop.svg";
 import intro_left_mobile from "../images/bg-pattern-intro-left-mobile.svg";
+import bgnav_mobile from "../images/bg-pattern-mobile-nav.svg";
+import DataContext from "../DataContext";
+import { useContext } from "react";
 
 const HeaderComponent = () => {
-    
+    const  {clickmenu,setClickmenu}= useContext(DataContext)
+
   return (
     <header className="">
         <section className="hidden xl:block  relative pb-[20rem]">
@@ -26,7 +30,8 @@ const HeaderComponent = () => {
             <img src={intro_desktop} alt="intro_desktop" className=" absolute top-[6.5rem] right-[10rem] w-[40%]"/>
             <img src={intro_left_desktop} alt="intro_left_desktop" className=" absolute bottom-0  left-0"/>
         </section>
-        <section className="pb-[10rem] relative xl:hidden">
+        <section className={clickmenu   ?"hidden"
+                                        :"pb-[10rem] relative xl:hidden"}>
             <img src={intro_mobile} alt="intro_mobile" className=" w-full"/>
             <div className=" bg-[#2d2640] text-center px-[1.5rem] py-[6rem] relative overflow-hidden">
                 <img src={intro_left_mobile} alt="intro_left_mobile" className=" absolute z-[1] left-0 top-0"/>
@@ -36,10 +41,21 @@ const HeaderComponent = () => {
                         and technology to help you find the plan that’s right for you. Ensure you 
                         and your loved ones are protected.
                     </p>
-                    <button className=" font-fontKarla text-[#fafafa] px-[2rem] py-[0.5rem] border-2 border-white">View plans</button>
+                    <button className="btn">View plans</button>
                 </div>                
             </div>
             <img src={intro_right_mobile} alt="intro_right_mobile" className=" absolute z-[1]  bottom-0 right-0"/>
+        </section>
+
+        <section className={clickmenu   ?" block w-full h-screen bg-[#2b272f] pt-[4rem] relative xl:hidden"
+                                        :" hidden"}>
+                   <img src={bgnav_mobile} alt="bgnav_mobile" className=" absolute bottom-0 right-0 w-screen"/>
+                    <div className="flex flex-col items-center">
+                        <a href="" className="nav-menu">How we work</a>
+                        <a href="" className="nav-menu">Blog</a>
+                        <a href="" className="nav-menu">Account</a>
+                        <a href="" className="nav-menu">View plans</a>
+                    </div>
         </section>
     </header>
   )
