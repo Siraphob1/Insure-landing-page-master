@@ -10,6 +10,9 @@
     @apply  uppercase font-fontKarla font-bold text-[#837d87] 
             lg:px-[1rem] lg:py-[0.5rem] lg:tracking-[0.1rem]
   }
+  .btn{
+    @apply  font-fontKarla text-[#fafafa] uppercase px-[2rem] py-[0.5rem] border-2 border-white
+  }
   .h1-section1{
     @apply  font-fontDM text-[2.7rem] text-[#2b272f] text-center
             xl:text-[4.2rem] xl:text-start
