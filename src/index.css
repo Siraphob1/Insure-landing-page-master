@@ -10,6 +10,20 @@
     @apply  uppercase font-fontKarla font-bold text-[#837d87] 
             lg:px-[1rem] lg:py-[0.5rem] lg:tracking-[0.1rem]
   }
+  .h1-section1{
+    @apply  font-fontDM text-[2.7rem] text-[#2b272f] text-center xl:text-[4.2rem] xl:text-start
+  }
+  .card-section1{
+    @apply  flex flex-col items-center mt-[3rem] xl:items-start xl:mt-[6rem]
+  }
+  .h2-section1{
+    @apply  font-fontDM  text-[1.7rem] text-[#2b272f] mt-[2rem] mb-[1rem]
+            
+  }
+  .p-section1{
+    @apply  font-fontKarla  text-[#837d87] px-[0.1rem]
+            xl:pr-[3rem] xl:pl-0
+  }
 }
 
 *{
@@ -32,7 +46,6 @@
 
   --fw-DM:400;
   --fw-Karla:400;
-  --fw-Karla:700;
-  
-
+  --fw-Karla:700; 
 }
+
