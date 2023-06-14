@@ -19,7 +19,7 @@ const HeaderComponent = () => {
                     and technology to help you find the plan that’s right for you. Ensure you 
                     and your loved ones are protected.
                     </p>
-                    <button className=" font-fontKarla text-[#fafafa] px-[2rem] py-[0.5rem] border-2 border-white">View plans</button>
+                    <button className="btn">View plans</button>
                 </div>
                 <img src={intro_right_desktop} alt="intro_right_desktop" className=" absolute z-[2] -top-[5rem] right-0"/>
             </div>        
